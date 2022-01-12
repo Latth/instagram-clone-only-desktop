@@ -318,6 +318,7 @@
 
         
         let openNews = document.querySelector('.openNews').addEventListener('click', function(element) {
+            element.preventDefault();
             document.querySelector('.newsAboutMe').classList.toggle('active')
         })
         
