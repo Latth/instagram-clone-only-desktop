@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/img/coloredLogo.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerContainer">
+
+            <a href="index.html"> <img src="assets/img/mainLogo.png" alt="instagram logo title" class="logoHeader"></a>
+
+            <div class="headerSearch">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" class="search" placeholder="Ara">
+                <i class="fas fa-times-circle resetinput"></i>
+            </div>
+            <div class="HeaderButtons">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+                <a href="messenger.html"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="explore.html"><i class="far fa-compass"></i></a>
+                <a href="#"><i class="far fa-heart openNews"></i> <span class="newsAboutMe "> 
+                    <div class="newsMeItem">
+                        <img src="assets/img/profilePic.jpg" alt="">
+                        <p><span class="username">latth.dev</span> sana bir mesaj gönderdi, hemen mesajlara git.</p>
+                    </div>
+
+                    <div class="newsMeItem">
+                        <img src="https://picsum.photos/500/500?random=101" alt="">
+                        <p><span class="username">drake</span> sana bir mesaj gönderdi, hemen mesajlara git.</p>
+                    </div>
+                </span> </a>
+                <a href="profile.html"><i><img src="assets/img/profilePic.jpg" alt=""></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainProfile">
+        <div class="container">
+
+
+            <div class="profileHeader">
+                <img src="assets/img/profilePic.jpg" alt="">
+
+                <div class="profileContents">
+                    <div class="contentHeader">
+                        <span class="profileUsername">latth.dev</span> <a href="#">Profili Düzenle</a> <span><i
+                                class="fas fa-cog"></i></span>
+                    </div>
+
+                    <div class="followDetails">
+                        <a href="#"><span>3</span> gönderi</a>
+                        <a href="#"><span>2332</span> takipçi</a>
+                        <a href="#"><span>322</span> takip</a>
+                    </div>
+
+                    <div class="profileBio">
+                        <p>Ahmet Aras</p>
+                        <p>Front-end Developer </p>
+                        <a href="https://latth.dev/">latth.dev</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="postsShowroom">
+                <div class="container">
+
+                    <div class="showroomNav">
+                        <ul>
+                            <a class="active" id="pictures">
+                                <li>Gönderiler</li>
+                            </a>
+                            <a >
+                                <li>Videolar</li>
+                            </a>
+                            <a >
+                                <li>Kaydedilenler</li>
+                            </a>
+                            <a >
+                                <li>Etiketlenenler</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="showroomImages">
+                        <div class="showroomItem">
+                            <span>
+                                 <p><i class="fas fa-heart"></i> 26</p>
+                                 <p><i class="fas fa-heart"></i> 33</p>
+                            </span>
+                            <img src="https://picsum.photos/500/500?random=99" alt="">
+                        </div>
+                        <div class="showroomItem">
+                            <span>
+                                 <p><i class="fas fa-heart"></i> 26</p>
+                                 <p><i class="fas fa-heart"></i> 33</p>
+                            </span>
+                            <img src="https://picsum.photos/500/500?random=2198" alt="">
+                        </div>
+                        <div class="showroomItem">
+                            <span>
+                                 <p><i class="fas fa-heart"></i> 26</p>
+                                 <p><i class="fas fa-heart"></i> 33</p>
+                            </span>
+                            <img src="https://picsum.photos/500/500?random=98" alt="">
+                        </div>
+                        <div class="showroomItem">
+                            <span>
+                                 <p><i class="fas fa-heart"></i> 26</p>
+                                 <p><i class="fas fa-heart"></i> 33</p>
+                            </span>
+                            <img src="https://picsum.photos/500/500?random=97" alt="">
+                        </div>
+                        <div class="showroomItem">
+                            <span>
+                                 <p><i class="fas fa-heart"></i> 26</p>
+                                 <p><i class="fas fa-heart"></i> 33</p>
+                            </span>
+                            <img src="https://picsum.photos/500/500?random=96" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/scripts/chance.js"></script>
+    <script>
+        let showroomNav = document.querySelectorAll('.showroomNav ul a')
+        let picHiding = document.querySelectorAll('.showroomItem')
+
+        function moveShowRoom() {
+            showroomNav.forEach((el) => {
+                el.classList.remove('active')})
+                this.classList.add('active')
+        }
+
+        showroomNav.forEach((item) => {
+            item.addEventListener('click', moveShowRoom)
+            
+        })
+
+        let openNews = document.querySelector('.openNews').addEventListener('click', function(element) {
+            document.querySelector('.newsAboutMe').classList.toggle('active')
+        })
+        
+
+        
+    </script>
+</body>
+
+</html>

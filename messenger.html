@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/img/coloredLogo.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Gelen Kutusu • Sohbetler</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="headerContainer">
+
+            <a href="index.html"> <img src="assets/img/mainLogo.png" alt="instagram logo title" class="logoHeader"></a>
+
+            <div class="headerSearch">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" class="search" placeholder="Ara">
+                <i class="fas fa-times-circle resetinput"></i>
+            </div>
+            <div class="HeaderButtons">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+                <a href="messenger.html"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="explore.html"><i class="far fa-compass"></i></a>
+                <a href="#"><i class="far fa-heart openNews"></i> <span class="newsAboutMe "> 
+                    <div class="newsMeItem">
+                        <img src="assets/img/profilePic.jpg" alt="">
+                        <p><span class="username">latth.dev</span> sana bir mesaj gönderdi, hemen mesajlara git.</p>
+                    </div>
+
+                    <div class="newsMeItem">
+                        <img src="https://picsum.photos/500/500?random=101" alt="">
+                        <p><span class="username">drake</span> sana bir mesaj gönderdi, hemen mesajlara git.</p>
+                    </div>
+                </span> </a>
+                <a href="profile.html"><i><img src="assets/img/profilePic.jpg" alt=""></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainSection">
+        <div class="container">
+
+
+
+
+
+            <div class="messagedUsers">
+                <div class="ownerUserHeader">
+                    <p>latheriel</p>
+                    <i class="far fa-edit"></i>
+                </div>
+                <div class="messengerMiniNav">
+                    <a href="#" class="active">birincil</a>
+                    <a href="#">Genel</a>
+                    <a href="#">İstekler</a>
+                </div>
+
+                <div class="userMessagesArea">
+                    <div class="userMessagesItem">
+                        <img src="assets/img/profilePic.jpg" alt="">
+                        <div class="userMessageTexts">
+                            <p>latth.dev</p>
+                            <p>Merhaba, demo'mu incelediğin için teşekkürler.</p>
+                        </div>
+                        <span>now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messengerArea">
+
+
+                <div class="senderHeader">
+                    <img src="assets/img/profilePic.jpg" alt="">
+                    <div class="headerText">
+                        <p>latth.dev</p>
+                    </div>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+
+                <div class="messagesTaken">
+                    <p>Merhaba, demo'mu incelediğini görüyorum. Umarım hoşuna gitmiştir.</p>
+                    <img src="assets/img/profilePic.jpg" alt="">
+                </div>
+
+                <a href="https://latth.dev/" target="_blank">
+                    <div class="messagesTaken">
+                        <p>bana ulaşmak için bu mesaja tıkla!</p>
+                        <img src="assets/img/profilePic.jpg" alt="">
+                    </div>
+                </a>
+                <div class="messengerAreaFooter">
+                    <div class="messageInput">
+                        <i class="far fa-smile"></i>
+                        <input type="text" name="messageTextInput" id="" placeholder="Mesaj yaz...">
+                        <i class="far fa-image"></i>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/index.js"></script>
+    <script>
+                let openNews = document.querySelector('.openNews').addEventListener('click', function(element) {
+            document.querySelector('.newsAboutMe').classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
